@@ -10,7 +10,7 @@ Welcome to *Fractional Calculus Adventure*, an interactive course material desig
 - Figures and graphs illustrating concepts like memory kernels.
 
 ## 📚 Levels
-1. Gate of Memory – Fractional integrals, intuition of memory.
+1. Temple of Smriti or Gate of Memory – Fractional integrals, intuition of memory.
 2. River of Derivatives – Riemann–Liouville vs. Caputo derivatives.
 3. Chamber of Keys – Properties of integrals (semigroup, linearity).
 4. Tower of Transforms – Laplace transforms and solving FDEs.
