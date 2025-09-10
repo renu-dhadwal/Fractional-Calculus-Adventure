@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fractional Calculus Adventure",
+    "section": "",
+    "text": "1 Welcome\nThis is a minimal Quarto project for the Fractional Calculus Adventure course material.\nIt includes a dialogue-driven chapter and a runnable Jupyter notebook demo (kernel plot).\nUse quarto render to build the site locally, or push to GitHub and configure Pages to serve the rendered docs/ folder produced by Quarto.\nLinks - Level 1 – Temple of Smriti (Memory) - Kernel demo notebook",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Fractional Calculus Adventure</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html",
+    "href": "chapters/level1_temple_of_smriti.html",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "",
+    "text": "2.1 Part I – First Steps: Repeated Integration\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nScene: Ananya and Acharya Anvaya stand before the Temple of Smriti (Memory). Its walls glow faintly with carved Sanskrit verses. Above the arch is inscribed:\n“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”\nAcharya Anvaya: Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.\nQuestion: What is the integral of \\(1\\)?\nAnanya:\n\\[\nI^1 (1)(t) = \\int_0^t 1\\, d\\tau = t.\n\\]\nAcharya Anvaya: Good. And integrating once more?\nAnanya:\n\\[\nI^2 (1)(t) = \\int_0^t I^1(1)(\\tau)\\, d\\tau = \\int_0^t \\tau\\, d\\tau = \\frac{t^2}{2!}.\n\\]\nAcharya Anvaya: Excellent. And thrice?\nAnanya:\n\\[\nI^3 (1)(t) = \\int_0^t \\frac{\\tau^2}{2!}\\, d\\tau = \\frac{t^3}{3!}.\n\\]\nAnanya: Yes — after \\(n\\) integrations, we get \\[I^n (1)(t) = \\frac{t^n}{n!}.\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#part-ii-the-cauchy-formula",
+    "href": "chapters/level1_temple_of_smriti.html#part-ii-the-cauchy-formula",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.2 Part II – The Cauchy Formula",
+    "text": "2.2 Part II – The Cauchy Formula\nAcharya Anvaya: Exactly. This formula can be written more generally using what is called the Cauchy formula for repeated integration:\n\\[\nI^n f(t) = \\frac{1}{(n-1)!} \\int_0^t (t-\\tau)^{\\,n-1} f(\\tau)\\, d\\tau.\n\\]\nFor \\(f(\\tau)=1\\) this becomes\n\\[\nI^n (1)(t) = \\frac{1}{(n-1)!} \\int_0^t (t-\\tau)^{\\,n-1} d\\tau = \\frac{t^n}{n!}.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#part-iii-the-bridge-of-gamma",
+    "href": "chapters/level1_temple_of_smriti.html#part-iii-the-bridge-of-gamma",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.3 Part III – The Bridge of Gamma",
+    "text": "2.3 Part III – The Bridge of Gamma\nAcharya Anvaya: Precisely. Now comes the real question: what if we want half an integration? Or any fractional number of integrations?\nThe Gamma function extends factorials: \\(\\Gamma(n)=(n-1)!\\), and replacing factorials with Gamma gives the fractional integral\n\\[\n(I^\\alpha f)(t) = \\frac{1}{\\Gamma(\\alpha)}\\int_0^t (t-\\tau)^{\\alpha-1} f(\\tau)\\, d\\tau.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#part-iv-memory-revealed",
+    "href": "chapters/level1_temple_of_smriti.html#part-iv-memory-revealed",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.4 Part IV – Memory Revealed",
+    "text": "2.4 Part IV – Memory Revealed\nAcharya Anvaya: Notice how the kernel \\((t-\\tau)^{\\alpha-1}\\) gives weight to the past. Recent events dominate, but distant ones still whisper — like the fading resonance of a śaṅkha (conch shell).\nAnanya: So the function carries echoes of its whole history.\nAcharya Anvaya: Well said. This is the memory effect.\n\n2.4.1 Mini-Quest 1: The Half-Memory\nEvaluate \\((I^{1/2} 1)(t)\\).\n\nChoice A: proportional to \\(t^{1/2}\\).\nChoice B: proportional to \\(t\\).\nChoice C: constant.\n\nSolution:\n\\[\n(I^{1/2} 1)(t) = \\frac{1}{\\Gamma(1/2)}\\int_0^t (t-\\tau)^{-1/2}\\, d\\tau = \\frac{2}{\\sqrt{\\pi}} t^{1/2}.\n\\]\nYou have earned the Key of Smriti (Memory).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/kernel_demo.html",
+    "href": "chapters/kernel_demo.html",
+    "title": "3  Kernel demo",
+    "section": "",
+    "text": "This notebook plots the memory kernel \\((t-\\tau)^{\\alpha-1}\\) on \\(\\tau\\in[0,t]\\) for different \\(\\alpha\\).\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nt = 1.0\ntaus = np.linspace(0, t, 400)\nalphas = [0.2, 0.5, 0.9]\nplt.figure(figsize=(6,4))\nfor a in alphas:\n    kernel = (t - taus)**(a-1)\n    plt.plot(taus, kernel, label=f'alpha={a}')\nplt.xlabel('tau')\nplt.ylabel('kernel (t-tau)^{alpha-1}')\nplt.legend()\nplt.title('Memory kernel for different alpha')\nplt.show()",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kernel demo</span>"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "index.qmd": {
+    "index.html": "693dd513"
+  },
+  "chapters/level1_temple_of_smriti.qmd": {
+    "level1_temple_of_smriti.html": "dcfc93d4"
+  },
+  "chapters/kernel_demo.ipynb": {
+    "kernel_demo.html": "03c5a3b0"
+  }
+}
