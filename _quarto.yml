@@ -1,0 +1,11 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Fractional Calculus Adventure"
+  author: Renu Dhadwal
+  chapters:
+    - index.qmd
+    - chapters/level1_temple_of_smriti.qmd
+    - chapters/kernel_demo.ipynb

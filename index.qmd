@@ -1,0 +1,17 @@
+---
+title: "Fractional Calculus Adventure"
+format: html
+---
+
+# Fractional Calculus Adventure
+
+**A dialogue-driven course and interactive resource for fractional differential equations.**
+
+**Instructor:** Renu Dhadwal
+**Format:** Dialogue + mini-quests + interactive notebooks
+
+## Course Resources
+- **Level 1 – Temple of Smriti (Memory)** — [Read the chapter](chapters/level1_temple_of_smriti.qmd)  
+- **Kernel demo notebook** — [Interactive notebook](chapters/kernel_demo.ipynb)  
+- README & source on GitHub: [Repository link](https://github.com/your-username/your-repo)
+
