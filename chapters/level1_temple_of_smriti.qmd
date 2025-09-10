@@ -1,0 +1,93 @@
+---
+title: "Level 1 – The Temple of Smriti (Memory)"
+format: html
+jupyter: python3
+---
+
+**Characters**:  
+- **Acharya Anvaya (Guide/Teacher)**  
+- **Ananya (Learner, seeker of truth)**  
+
+---
+
+**Scene**: Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its walls glow faintly with carved Sanskrit verses. Above the arch is inscribed:  
+
+*"कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory)."*
+
+### Part I – First Steps: Repeated Integration and the Cauchy Forumula
+
+**Acharya Anvaya**: Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
+
+**Question**: What is the integral of $1$?
+
+**Ananya**:
+
+$$
+I^1 (1)(t) = \int_0^t 1\, d\tau = t.
+$$
+
+**Acharya Anvaya**: Good. And integrating once more?
+
+**Ananya**:
+
+$$
+I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
+$$
+
+**Acharya Anvaya**: Excellent. And thrice?
+
+**Ananya**:
+
+$$
+I^3 (1)(t) = \int_0^t \frac{\tau^2}{2!}\, d\tau = \frac{t^3}{3!}.
+$$
+
+**Ananya**: Yes — after $n$ integrations, we get
+$$I^n (1)(t) = \frac{t^n}{n!}.$$
+
+
+**Acharya Anvaya**: Exactly. This formula can be written more generally using what is called the *Cauchy formula for repeated integration*:
+
+$$
+I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
+$$
+
+For $f(\tau)=1$ this becomes
+
+$$
+I^n (1)(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} d\tau = \frac{t^n}{n!}.
+$$
+
+## Part III – The Bridge of Gamma
+
+**Acharya Anvaya**: Precisely. Now comes the real question: what if we want *half an integration*? Or any fractional number of integrations?
+
+The *Gamma* function extends factorials: $\Gamma(n)=(n-1)!$, and replacing factorials with Gamma gives the fractional integral
+
+$$
+(I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
+$$
+
+## Part IV – Memory Revealed
+
+**Acharya Anvaya**: Notice how the kernel $(t-\tau)^{\alpha-1}$ gives weight to the past. Recent events dominate, but distant ones still whisper — like the fading resonance of a *śaṅkha (conch shell)*.
+
+**Ananya**: So the function carries echoes of its whole history.
+
+**Acharya Anvaya**: Well said. This is the *memory effect*.
+
+### Mini-Quest 1: The Half-Memory
+
+Evaluate $(I^{1/2} 1)(t)$.
+
+- Choice A: proportional to $t^{1/2}$.
+- Choice B: proportional to $t$.
+- Choice C: constant.
+
+Solution:
+
+$$
+(I^{1/2} 1)(t) = \frac{1}{\Gamma(1/2)}\int_0^t (t-\tau)^{-1/2}\, d\tau = \frac{2}{\sqrt{\pi}} t^{1/2}.
+$$
+
+You have earned the **Key of Smriti (Memory)**.

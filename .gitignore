@@ -1,0 +1,17 @@
+# Quarto/Pandoc / outputs
+_docs/
+docs/
+_book/
+_site/
+.quarto/
+.quarto/_freeze/
+.quarto/**/execute-results/
+*.utf8
+*.nb.html
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+
+# OS files
+Thumbs.db
+.DS_Store
